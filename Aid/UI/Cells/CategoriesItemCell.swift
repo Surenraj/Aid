@@ -23,7 +23,7 @@ class CategoriesItemCell: UICollectionViewCell {
     func loadView(category: Category?) {
         
         self.imgViewBorder.layer.borderWidth = 2
-        self.imgViewBorder.layer.borderColor = UIColor.gray.cgColor
+        self.imgViewBorder.layer.borderColor = UIColor(hex: "#F7F8F8").cgColor
         self.imgViewBorder.layer.cornerRadius = 17
         
         self.category = category

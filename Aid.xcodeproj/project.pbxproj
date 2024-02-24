@@ -15,6 +15,7 @@
 		2A38E5E32B8666DA005AB7E2 /* AidUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38E5E22B8666DA005AB7E2 /* AidUITestsLaunchTests.swift */; };
 		2A38E5F62B866918005AB7E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38E5F52B866918005AB7E2 /* HomeViewController.swift */; };
 		2A38E5F92B866975005AB7E2 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A38E5F82B866975005AB7E2 /* HomeViewController.storyboard */; };
+		2A5CDBA72B8A8C1300032600 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CDBA62B8A8C1300032600 /* UIColor.swift */; };
 		2A61290E2B89D55C0074C694 /* CategoriesItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A61290C2B89D55C0074C694 /* CategoriesItemCell.swift */; };
 		2A61290F2B89D55C0074C694 /* CategoriesItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A61290D2B89D55C0074C694 /* CategoriesItemCell.xib */; };
 		2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2396F2B89DA46005F37A3 /* HomeVIewModel.swift */; };
@@ -69,6 +70,7 @@
 		2A38E60A2B86899D005AB7E2 /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
 		2A38E60B2B86899D005AB7E2 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		2A38E60C2B86899D005AB7E2 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		2A5CDBA62B8A8C1300032600 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		2A61290C2B89D55C0074C694 /* CategoriesItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesItemCell.swift; sourceTree = "<group>"; };
 		2A61290D2B89D55C0074C694 /* CategoriesItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesItemCell.xib; sourceTree = "<group>"; };
 		2AE2396F2B89DA46005F37A3 /* HomeVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewModel.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		2A38E5F42B866840005AB7E2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2A5CDBA52B8A8C0500032600 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -233,6 +236,14 @@
 				2A38E6002B86899D005AB7E2 /* Poppins-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2A5CDBA52B8A8C0500032600 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2A5CDBA62B8A8C1300032600 /* UIColor.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2A61290B2B89D5280074C694 /* Cells */ = {
@@ -384,6 +395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */,
+				2A5CDBA72B8A8C1300032600 /* UIColor.swift in Sources */,
 				2A61290E2B89D55C0074C694 /* CategoriesItemCell.swift in Sources */,
 				2A38E5C02B8666D8005AB7E2 /* AppDelegate.swift in Sources */,
 				2A38E5C22B8666D8005AB7E2 /* SceneDelegate.swift in Sources */,
