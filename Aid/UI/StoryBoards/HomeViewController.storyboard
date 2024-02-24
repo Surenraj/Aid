@@ -102,7 +102,7 @@ your top doctor!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBZ-9M-h5A" userLabel="Categories Section">
-                                <rect key="frame" x="0.0" y="385" width="393" height="200"/>
+                                <rect key="frame" x="0.0" y="385" width="393" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hg-45-QSh" userLabel="TitleCategories">
                                         <rect key="frame" x="30" y="23" width="145" height="24"/>
@@ -113,11 +113,10 @@ your top doctor!</string>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G59-70-NRg">
-                                        <rect key="frame" x="30" y="57" width="363" height="111"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="G59-70-NRg">
+                                        <rect key="frame" x="30" y="47" width="363" height="123"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="40" minimumInteritemSpacing="5" id="ToA-X5-dKw">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="30" minimumInteritemSpacing="5" id="ToA-X5-dKw">
                                             <size key="itemSize" width="102" height="108"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -125,7 +124,7 @@ your top doctor!</string>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VFb-EC-FFw">
-                                                <rect key="frame" x="0.0" y="1.6666666666666667" width="102" height="108"/>
+                                                <rect key="frame" x="0.0" y="7.666666666666667" width="102" height="108"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bwE-DQ-Q4t">
                                                     <rect key="frame" x="0.0" y="0.0" width="102" height="108"/>
@@ -138,8 +137,12 @@ your top doctor!</string>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="C6R-SJ-aEW"/>
+                                    <constraint firstAttribute="height" constant="170" id="C6R-SJ-aEW"/>
                                     <constraint firstItem="9hg-45-QSh" firstAttribute="leading" secondItem="rBZ-9M-h5A" secondAttribute="leading" constant="30" id="CUI-8L-gLv"/>
+                                    <constraint firstAttribute="bottom" secondItem="G59-70-NRg" secondAttribute="bottom" id="PNR-Qx-8fs"/>
+                                    <constraint firstItem="G59-70-NRg" firstAttribute="top" secondItem="9hg-45-QSh" secondAttribute="bottom" id="dwP-Cn-ZoT"/>
+                                    <constraint firstAttribute="trailing" secondItem="G59-70-NRg" secondAttribute="trailing" id="fQ6-zq-qfj"/>
+                                    <constraint firstItem="G59-70-NRg" firstAttribute="leading" secondItem="9hg-45-QSh" secondAttribute="leading" id="mN1-5m-gf1"/>
                                     <constraint firstItem="9hg-45-QSh" firstAttribute="top" secondItem="rBZ-9M-h5A" secondAttribute="top" constant="23" id="p1I-W3-A9E"/>
                                 </constraints>
                             </view>
