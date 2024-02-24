@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UICollectionViewDataSource {
    
+    @IBOutlet weak var bottomNavigationView: UIView!
     @IBOutlet weak var categoriesListView: UICollectionView!
     var viewModel: HomeViewModel?
     
@@ -23,6 +24,15 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         categoriesListView.dataSource = self
         self.viewModel = HomeViewModel()
         registerCells()
+        
+        
+        ///
+        self.bottomNavigationView.layer.cornerRadius = 10
+        self.bottomNavigationView.layer.shadowColor = UIColor(hex: "#f7f8fb").cgColor
+        self.bottomNavigationView.layer.shadowOpacity = 1
+        self.bottomNavigationView.layer.shadowOffset = .zero
+        self.bottomNavigationView.layer.shadowRadius = 10
+        
     }
     
     func load() {

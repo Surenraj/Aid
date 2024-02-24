@@ -199,6 +199,7 @@ your top doctor!</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomNavigationView" destination="W1X-x3-74I" id="Vup-Qz-9gN"/>
                         <outlet property="categoriesListView" destination="G59-70-NRg" id="5DM-FF-5ra"/>
                     </connections>
                 </viewController>
