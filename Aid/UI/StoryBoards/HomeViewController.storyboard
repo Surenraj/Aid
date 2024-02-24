@@ -146,16 +146,52 @@ your top doctor!</string>
                                     <constraint firstItem="9hg-45-QSh" firstAttribute="top" secondItem="rBZ-9M-h5A" secondAttribute="top" constant="23" id="p1I-W3-A9E"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-x3-74I" userLabel="bottomNavigationView">
+                                <rect key="frame" x="30" y="763" width="333" height="50"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="YEm-iG-0KO">
+                                        <rect key="frame" x="0.0" y="0.0" width="333" height="30"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="7Sz-BR-YIt">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="eOU-s9-rgT"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="auq-No-1cN">
+                                                <rect key="frame" x="91" y="0.0" width="60" height="30"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="DH8-0J-t1N">
+                                                <rect key="frame" x="182" y="0.0" width="60" height="30"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="zbk-vI-uKt">
+                                                <rect key="frame" x="273" y="0.0" width="60" height="30"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Sz-2i-qX8"/>
+                                    <constraint firstAttribute="trailing" secondItem="YEm-iG-0KO" secondAttribute="trailing" id="X7Q-oY-Kbz"/>
+                                    <constraint firstItem="YEm-iG-0KO" firstAttribute="leading" secondItem="W1X-x3-74I" secondAttribute="leading" id="p1Y-X7-ZxA"/>
+                                    <constraint firstItem="YEm-iG-0KO" firstAttribute="top" secondItem="W1X-x3-74I" secondAttribute="top" id="t5R-WV-eQb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rBZ-9M-h5A" firstAttribute="trailing" secondItem="rJD-GZ-l08" secondAttribute="trailing" id="2h4-GZ-DFb"/>
                             <constraint firstItem="rBZ-9M-h5A" firstAttribute="leading" secondItem="rJD-GZ-l08" secondAttribute="leading" id="4Jt-o3-I2e"/>
+                            <constraint firstItem="W1X-x3-74I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="OcU-BK-QzE"/>
                             <constraint firstItem="rJD-GZ-l08" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="RS9-93-EqT"/>
+                            <constraint firstItem="W1X-x3-74I" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-5" id="WfY-3p-BAB"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rJD-GZ-l08" secondAttribute="trailing" id="bHz-YP-t9K"/>
                             <constraint firstItem="rJD-GZ-l08" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uiN-OX-Suv"/>
                             <constraint firstItem="rBZ-9M-h5A" firstAttribute="top" secondItem="rJD-GZ-l08" secondAttribute="bottom" id="vLu-Qi-dkN"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="W1X-x3-74I" secondAttribute="trailing" constant="30" id="yA9-Gm-8Ef"/>
                         </constraints>
                     </view>
                     <connections>
@@ -168,7 +204,11 @@ your top doctor!</string>
         </scene>
     </scenes>
     <resources>
+        <image name="calendar" width="27" height="27"/>
+        <image name="chat" width="27" height="27"/>
         <image name="hamburgerIcon" width="18" height="15"/>
+        <image name="home" width="27" height="27"/>
+        <image name="profile" width="36" height="36"/>
         <image name="sampleImg" width="57" height="57"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
