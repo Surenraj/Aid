@@ -1,5 +1,5 @@
 //
-//  Categories.swift
+//  Category.swift
 //  Aid
 //
 //  Created by Suren Raj on 24/02/24.

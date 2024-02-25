@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="DoctorsItemCell" customModule="Aid" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhY-SA-Gxp" userLabel="imgView">
+                        <rect key="frame" x="20" y="15" width="75" height="75"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleImg" translatesAutoresizingMaskIntoConstraints="NO" id="FRe-uf-i87" userLabel="img">
+                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="activeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Leb-qw-5GH">
+                                <rect key="frame" x="63" y="0.0" width="12" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="P7C-Ma-DOO"/>
+                                    <constraint firstAttribute="height" constant="12" id="ht5-Ex-ZJh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Leb-qw-5GH" secondAttribute="trailing" id="DzC-wo-mS1"/>
+                            <constraint firstAttribute="trailing" secondItem="FRe-uf-i87" secondAttribute="trailing" id="Iw2-cH-bta"/>
+                            <constraint firstAttribute="width" constant="75" id="Kw9-3d-Fxm"/>
+                            <constraint firstItem="FRe-uf-i87" firstAttribute="top" secondItem="uhY-SA-Gxp" secondAttribute="top" id="QZM-36-h10"/>
+                            <constraint firstItem="FRe-uf-i87" firstAttribute="leading" secondItem="uhY-SA-Gxp" secondAttribute="leading" id="UjF-i5-Vaf"/>
+                            <constraint firstAttribute="height" constant="75" id="ZPh-DM-Xeg"/>
+                            <constraint firstAttribute="bottom" secondItem="FRe-uf-i87" secondAttribute="bottom" id="ai0-Ay-NPq"/>
+                            <constraint firstItem="Leb-qw-5GH" firstAttribute="top" secondItem="uhY-SA-Gxp" secondAttribute="top" id="bej-6O-tOa"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sampleRatingStar" translatesAutoresizingMaskIntoConstraints="NO" id="ZzW-Bx-sbu" userLabel="ratingStar">
+                        <rect key="frame" x="35" y="98" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6W2-yM-yN8"/>
+                            <constraint firstAttribute="height" constant="20" id="fgR-cl-3JZ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Maria Waston" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vas-XO-Zuc" userLabel="name">
+                        <rect key="frame" x="125" y="15" width="282" height="24"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                        <color key="textColor" red="0.29411764705882354" green="0.33333333333333331" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heart Surgeon, London, England" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Det-Rg-BhA" userLabel="designation">
+                        <rect key="frame" x="125" y="44" width="282" height="19.666666666666671"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.47058823529411764" green="0.63921568627450975" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoz-0S-05x" userLabel="ratingCount">
+                        <rect key="frame" x="60" y="100" width="20" height="18.333333333333329"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="13"/>
+                        <color key="textColor" red="0.61176470588235299" green="0.63921568627450975" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7is-hs-mEk" userLabel="appointmentBtn">
+                        <rect key="frame" x="125" y="78" width="124" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="gft-oE-GIO"/>
+                        </constraints>
+                        <color key="tintColor" red="0.29411764705882354" green="0.33333333333333331" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="gray" title="Appointment">
+                            <fontDescription key="titleFontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                            <color key="baseBackgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Yoz-0S-05x" firstAttribute="leading" secondItem="ZzW-Bx-sbu" secondAttribute="trailing" constant="5" id="Fme-ai-YQB"/>
+                    <constraint firstAttribute="bottom" secondItem="ZzW-Bx-sbu" secondAttribute="bottom" id="HJ6-IK-mS1"/>
+                    <constraint firstAttribute="trailing" secondItem="Vas-XO-Zuc" secondAttribute="trailing" constant="10" id="Ml4-an-sbZ"/>
+                    <constraint firstItem="Vas-XO-Zuc" firstAttribute="leading" secondItem="Det-Rg-BhA" secondAttribute="leading" id="VaC-eE-sHT"/>
+                    <constraint firstItem="Det-Rg-BhA" firstAttribute="top" secondItem="Vas-XO-Zuc" secondAttribute="bottom" constant="5" id="ZvA-X1-xCt"/>
+                    <constraint firstItem="7is-hs-mEk" firstAttribute="top" secondItem="Det-Rg-BhA" secondAttribute="bottom" constant="14.333333333333329" id="a0C-0x-O0f"/>
+                    <constraint firstItem="uhY-SA-Gxp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bNX-3d-C9z"/>
+                    <constraint firstItem="ZzW-Bx-sbu" firstAttribute="leading" secondItem="uhY-SA-Gxp" secondAttribute="leading" constant="15" id="cM3-fZ-q0I"/>
+                    <constraint firstItem="ZzW-Bx-sbu" firstAttribute="top" secondItem="uhY-SA-Gxp" secondAttribute="bottom" constant="8" id="h3t-53-XxH"/>
+                    <constraint firstItem="Vas-XO-Zuc" firstAttribute="leading" secondItem="uhY-SA-Gxp" secondAttribute="trailing" constant="30" id="kor-DA-Jsx"/>
+                    <constraint firstItem="uhY-SA-Gxp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lIF-hR-O5b"/>
+                    <constraint firstItem="Vas-XO-Zuc" firstAttribute="top" secondItem="uhY-SA-Gxp" secondAttribute="top" id="mcy-HD-Dff"/>
+                    <constraint firstItem="7is-hs-mEk" firstAttribute="leading" secondItem="Det-Rg-BhA" secondAttribute="leading" id="qA4-eX-Be9"/>
+                    <constraint firstItem="Yoz-0S-05x" firstAttribute="top" secondItem="uhY-SA-Gxp" secondAttribute="bottom" constant="10" id="vUE-95-Pfz"/>
+                    <constraint firstAttribute="trailing" secondItem="Det-Rg-BhA" secondAttribute="trailing" constant="10" id="wSp-Ga-aTR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activeIcon" destination="Leb-qw-5GH" id="Mcr-bt-T3m"/>
+                <outlet property="appointmentBtn" destination="7is-hs-mEk" id="Ejw-sp-mEd"/>
+                <outlet property="designation" destination="Det-Rg-BhA" id="hnX-1d-mdG"/>
+                <outlet property="imgView" destination="FRe-uf-i87" id="7vF-9g-pXh"/>
+                <outlet property="name" destination="Vas-XO-Zuc" id="d5p-bx-TkH"/>
+                <outlet property="ratingCount" destination="Yoz-0S-05x" id="VUC-X7-pQ0"/>
+                <outlet property="ratingStarImg" destination="ZzW-Bx-sbu" id="PUp-6X-ikQ"/>
+            </connections>
+            <point key="canvasLocation" x="49.618320610687022" y="50"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="activeIcon" width="12" height="12"/>
+        <image name="sampleImg" width="57" height="57"/>
+        <image name="sampleRatingStar" width="17" height="17"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

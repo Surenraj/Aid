@@ -18,8 +18,11 @@
 		2A5CDBA72B8A8C1300032600 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CDBA62B8A8C1300032600 /* UIColor.swift */; };
 		2A61290E2B89D55C0074C694 /* CategoriesItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A61290C2B89D55C0074C694 /* CategoriesItemCell.swift */; };
 		2A61290F2B89D55C0074C694 /* CategoriesItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A61290D2B89D55C0074C694 /* CategoriesItemCell.xib */; };
+		2A9172BB2B8B7D9400ACE790 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9172BA2B8B7D9400ACE790 /* Doctor.swift */; };
+		2A9172BE2B8B7ECF00ACE790 /* DoctorsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9172BC2B8B7ECF00ACE790 /* DoctorsItemCell.swift */; };
+		2A9172BF2B8B7ECF00ACE790 /* DoctorsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9172BD2B8B7ECF00ACE790 /* DoctorsItemCell.xib */; };
 		2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2396F2B89DA46005F37A3 /* HomeVIewModel.swift */; };
-		2AE239722B89DA99005F37A3 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE239712B89DA99005F37A3 /* Categories.swift */; };
+		2AE239722B89DA99005F37A3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE239712B89DA99005F37A3 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +76,11 @@
 		2A5CDBA62B8A8C1300032600 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		2A61290C2B89D55C0074C694 /* CategoriesItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesItemCell.swift; sourceTree = "<group>"; };
 		2A61290D2B89D55C0074C694 /* CategoriesItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesItemCell.xib; sourceTree = "<group>"; };
+		2A9172BA2B8B7D9400ACE790 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		2A9172BC2B8B7ECF00ACE790 /* DoctorsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsItemCell.swift; sourceTree = "<group>"; };
+		2A9172BD2B8B7ECF00ACE790 /* DoctorsItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsItemCell.xib; sourceTree = "<group>"; };
 		2AE2396F2B89DA46005F37A3 /* HomeVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewModel.swift; sourceTree = "<group>"; };
-		2AE239712B89DA99005F37A3 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		2AE239712B89DA99005F37A3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +198,8 @@
 		2A38E5F32B866835005AB7E2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2AE239712B89DA99005F37A3 /* Categories.swift */,
+				2AE239712B89DA99005F37A3 /* Category.swift */,
+				2A9172BA2B8B7D9400ACE790 /* Doctor.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -251,6 +258,8 @@
 			children = (
 				2A61290C2B89D55C0074C694 /* CategoriesItemCell.swift */,
 				2A61290D2B89D55C0074C694 /* CategoriesItemCell.xib */,
+				2A9172BC2B8B7ECF00ACE790 /* DoctorsItemCell.swift */,
+				2A9172BD2B8B7ECF00ACE790 /* DoctorsItemCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -368,6 +377,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A38E5F92B866975005AB7E2 /* HomeViewController.storyboard in Resources */,
+				2A9172BF2B8B7ECF00ACE790 /* DoctorsItemCell.xib in Resources */,
 				2A61290F2B89D55C0074C694 /* CategoriesItemCell.xib in Resources */,
 				2A38E5C92B8666D9005AB7E2 /* Assets.xcassets in Resources */,
 			);
@@ -396,11 +406,13 @@
 			files = (
 				2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */,
 				2A5CDBA72B8A8C1300032600 /* UIColor.swift in Sources */,
+				2A9172BE2B8B7ECF00ACE790 /* DoctorsItemCell.swift in Sources */,
+				2A9172BB2B8B7D9400ACE790 /* Doctor.swift in Sources */,
 				2A61290E2B89D55C0074C694 /* CategoriesItemCell.swift in Sources */,
 				2A38E5C02B8666D8005AB7E2 /* AppDelegate.swift in Sources */,
 				2A38E5C22B8666D8005AB7E2 /* SceneDelegate.swift in Sources */,
 				2A38E5F62B866918005AB7E2 /* HomeViewController.swift in Sources */,
-				2AE239722B89DA99005F37A3 /* Categories.swift in Sources */,
+				2AE239722B89DA99005F37A3 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

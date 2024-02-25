@@ -16,8 +16,9 @@ class HomeViewModel {
         .init(name: "General", imageUrl: "generalIcon")
     ]
     
+    var doctorsList: [] = [
+        
     
-    
-    
+    ]
 }
 

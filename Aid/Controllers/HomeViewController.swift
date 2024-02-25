@@ -7,10 +7,11 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDataSource {
+class HomeViewController: UIViewController {
    
     @IBOutlet weak var bottomNavigationView: UIView!
     @IBOutlet weak var categoriesListView: UICollectionView!
+    @IBOutlet weak var doctorsListView: UITableView!
     var viewModel: HomeViewModel?
     
     override func viewDidLoad() {
@@ -22,6 +23,11 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
     func initialSetup() {
         categoriesListView.delegate = self
         categoriesListView.dataSource = self
+        
+        doctorsListView.delegate = self
+        doctorsListView.dataSource = self
+        
+        
         self.viewModel = HomeViewModel()
         registerCells()
         
@@ -29,7 +35,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
         ///
         self.bottomNavigationView.layer.cornerRadius = 10
         self.bottomNavigationView.layer.shadowColor = UIColor(hex: "#f7f8fb").cgColor
-        self.bottomNavigationView.layer.shadowOpacity = 1
+        self.bottomNavigationView.layer.shadowOpacity = 10
         self.bottomNavigationView.layer.shadowOffset = .zero
         self.bottomNavigationView.layer.shadowRadius = 10
         
@@ -45,7 +51,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource {
 }
 
 
-extension HomeViewController : UICollectionViewDelegate {
+extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.viewModel?.categoryList.count ?? 0
@@ -61,4 +67,18 @@ extension HomeViewController : UICollectionViewDelegate {
         
         return UICollectionViewCell()
     }
+}
+
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
 }
