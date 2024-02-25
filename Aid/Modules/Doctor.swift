@@ -14,7 +14,7 @@ struct Doctor {
     var isAvailable: Bool?
     var ratings: String?
     
-    init(name: String? = nil, designation: String? = nil, doctorImg: String? = nil, isAvailable: Bool? = nil, ratings: String? = nil) {
+    init(name: String?, designation: String?, doctorImg: String?, isAvailable: Bool?, ratings: String?) {
         self.name = name
         self.designation = designation
         self.doctorImg = doctorImg

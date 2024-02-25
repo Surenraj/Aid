@@ -21,6 +21,7 @@
 		2A9172BB2B8B7D9400ACE790 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9172BA2B8B7D9400ACE790 /* Doctor.swift */; };
 		2A9172BE2B8B7ECF00ACE790 /* DoctorsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9172BC2B8B7ECF00ACE790 /* DoctorsItemCell.swift */; };
 		2A9172BF2B8B7ECF00ACE790 /* DoctorsItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9172BD2B8B7ECF00ACE790 /* DoctorsItemCell.xib */; };
+		2A9172C12B8BB0A200ACE790 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9172C02B8BB0A200ACE790 /* UIView.swift */; };
 		2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2396F2B89DA46005F37A3 /* HomeVIewModel.swift */; };
 		2AE239722B89DA99005F37A3 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE239712B89DA99005F37A3 /* Category.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +80,7 @@
 		2A9172BA2B8B7D9400ACE790 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 		2A9172BC2B8B7ECF00ACE790 /* DoctorsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsItemCell.swift; sourceTree = "<group>"; };
 		2A9172BD2B8B7ECF00ACE790 /* DoctorsItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoctorsItemCell.xib; sourceTree = "<group>"; };
+		2A9172C02B8BB0A200ACE790 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		2AE2396F2B89DA46005F37A3 /* HomeVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVIewModel.swift; sourceTree = "<group>"; };
 		2AE239712B89DA99005F37A3 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -249,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				2A5CDBA62B8A8C1300032600 /* UIColor.swift */,
+				2A9172C02B8BB0A200ACE790 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -404,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9172C12B8BB0A200ACE790 /* UIView.swift in Sources */,
 				2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */,
 				2A5CDBA72B8A8C1300032600 /* UIColor.swift in Sources */,
 				2A9172BE2B8B7ECF00ACE790 /* DoctorsItemCell.swift in Sources */,

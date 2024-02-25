@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJD-GZ-l08" userLabel="HeaderCard">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="385"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="360"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hamburgerIcon" translatesAutoresizingMaskIntoConstraints="NO" id="LgL-4V-Wat">
                                         <rect key="frame" x="30" y="80" width="20" height="20"/>
@@ -93,7 +93,7 @@ your top doctor!</string>
                                     <constraint firstItem="4sc-pM-IsV" firstAttribute="leading" secondItem="rJD-GZ-l08" secondAttribute="leading" constant="30" id="M0Y-5C-J0j"/>
                                     <constraint firstItem="LgL-4V-Wat" firstAttribute="leading" secondItem="rJD-GZ-l08" secondAttribute="leading" constant="30" id="N9C-uW-oTs"/>
                                     <constraint firstItem="Nl9-7e-anS" firstAttribute="leading" secondItem="GC1-EY-l71" secondAttribute="trailing" constant="5" id="TdO-ae-ctT"/>
-                                    <constraint firstAttribute="height" constant="385" id="Tzj-dB-J4e"/>
+                                    <constraint firstAttribute="height" constant="360" id="Tzj-dB-J4e"/>
                                     <constraint firstAttribute="trailing" secondItem="4sc-pM-IsV" secondAttribute="trailing" constant="30" id="i3s-dV-ylm"/>
                                     <constraint firstItem="GC1-EY-l71" firstAttribute="leading" secondItem="rJD-GZ-l08" secondAttribute="leading" constant="30" id="l51-2o-ycx"/>
                                     <constraint firstItem="ZUo-rI-7hC" firstAttribute="top" secondItem="kZE-kB-CJ4" secondAttribute="bottom" constant="7.9999999999999716" id="p30-WK-Pfb"/>
@@ -102,7 +102,7 @@ your top doctor!</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rBZ-9M-h5A" userLabel="Categories Section">
-                                <rect key="frame" x="0.0" y="385" width="393" height="170"/>
+                                <rect key="frame" x="0.0" y="360" width="393" height="170"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hg-45-QSh" userLabel="TitleCategories">
                                         <rect key="frame" x="30" y="23" width="145" height="24"/>
@@ -146,9 +146,11 @@ your top doctor!</string>
                                     <constraint firstItem="9hg-45-QSh" firstAttribute="top" secondItem="rBZ-9M-h5A" secondAttribute="top" constant="23" id="p1I-W3-A9E"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jxE-Bd-gsx">
-                                <rect key="frame" x="30" y="565" width="333" height="253"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jxE-Bd-gsx">
+                                <rect key="frame" x="30" y="540" width="333" height="198"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1X-x3-74I" userLabel="bottomNavigationView">
                                 <rect key="frame" x="30" y="743" width="333" height="70"/>
@@ -200,7 +202,7 @@ your top doctor!</string>
                             <constraint firstItem="rJD-GZ-l08" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="RS9-93-EqT"/>
                             <constraint firstItem="W1X-x3-74I" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-5" id="WfY-3p-BAB"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rJD-GZ-l08" secondAttribute="trailing" id="bHz-YP-t9K"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="jxE-Bd-gsx" secondAttribute="bottom" id="emZ-5X-O1F"/>
+                            <constraint firstItem="W1X-x3-74I" firstAttribute="top" secondItem="jxE-Bd-gsx" secondAttribute="bottom" constant="5" id="emZ-5X-O1F"/>
                             <constraint firstItem="rJD-GZ-l08" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="uiN-OX-Suv"/>
                             <constraint firstItem="rBZ-9M-h5A" firstAttribute="top" secondItem="rJD-GZ-l08" secondAttribute="bottom" id="vLu-Qi-dkN"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="W1X-x3-74I" secondAttribute="trailing" constant="30" id="yA9-Gm-8Ef"/>
@@ -210,6 +212,8 @@ your top doctor!</string>
                         <outlet property="bottomNavigationView" destination="W1X-x3-74I" id="Vup-Qz-9gN"/>
                         <outlet property="categoriesListView" destination="G59-70-NRg" id="5DM-FF-5ra"/>
                         <outlet property="doctorsListView" destination="jxE-Bd-gsx" id="mP0-wl-BvC"/>
+                        <outlet property="headerCardView" destination="rJD-GZ-l08" id="d7i-7r-oiB"/>
+                        <outlet property="searchTextField" destination="4sc-pM-IsV" id="ds2-5D-nAK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
