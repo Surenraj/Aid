@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A19612B2B8E52950009BDE2 /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19612A2B8E52950009BDE2 /* AppointmentsViewController.swift */; };
+		2A19612D2B8E52D10009BDE2 /* AppointmentsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A19612C2B8E52D10009BDE2 /* AppointmentsViewController.storyboard */; };
+		2A1EBD282B8F34330058C4CA /* NavigationBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1EBD272B8F34330058C4CA /* NavigationBarView.xib */; };
+		2A1EBD2A2B8F347C0058C4CA /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EBD292B8F347C0058C4CA /* NavigationBarView.swift */; };
+		2A20A0462B8F4A1A008E2046 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A20A0452B8F4A1A008E2046 /* UIViewController.swift */; };
+		2A367BFB2B8F625C0087C4C5 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A367BFA2B8F625C0087C4C5 /* UIApplication.swift */; };
 		2A38E5C02B8666D8005AB7E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38E5BF2B8666D8005AB7E2 /* AppDelegate.swift */; };
 		2A38E5C22B8666D8005AB7E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38E5C12B8666D8005AB7E2 /* SceneDelegate.swift */; };
 		2A38E5C92B8666D9005AB7E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A38E5C82B8666D9005AB7E2 /* Assets.xcassets */; };
@@ -44,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A19612A2B8E52950009BDE2 /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		2A19612C2B8E52D10009BDE2 /* AppointmentsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppointmentsViewController.storyboard; sourceTree = "<group>"; };
+		2A1EBD272B8F34330058C4CA /* NavigationBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBarView.xib; sourceTree = "<group>"; };
+		2A1EBD292B8F347C0058C4CA /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		2A20A0452B8F4A1A008E2046 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		2A367BFA2B8F625C0087C4C5 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		2A38E5BC2B8666D8005AB7E2 /* Aid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A38E5BF2B8666D8005AB7E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A38E5C12B8666D8005AB7E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +122,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A1961612B8F33B50009BDE2 /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				2A1EBD272B8F34330058C4CA /* NavigationBarView.xib */,
+				2A1EBD292B8F347C0058C4CA /* NavigationBarView.swift */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
 		2A38E5B32B8666D8005AB7E2 = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +154,8 @@
 		2A38E5BE2B8666D8005AB7E2 /* Aid */ = {
 			isa = PBXGroup;
 			children = (
+				2A1961612B8F33B50009BDE2 /* Navigations */,
 				2A38E5F22B86682A005AB7E2 /* UI */,
-				2A38E5F02B866800005AB7E2 /* Controllers */,
 				2AE2396E2B89DA08005F37A3 /* ViewModels */,
 				2A38E5F32B866835005AB7E2 /* Modules */,
 				2A38E5F12B866810005AB7E2 /* DataModels */,
@@ -173,17 +194,11 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		2A38E5F02B866800005AB7E2 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				2A38E5F52B866918005AB7E2 /* HomeViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		2A38E5F12B866810005AB7E2 /* DataModels */ = {
 			isa = PBXGroup;
 			children = (
+				2AE239712B89DA99005F37A3 /* Category.swift */,
+				2A9172BA2B8B7D9400ACE790 /* Doctor.swift */,
 			);
 			path = DataModels;
 			sourceTree = "<group>";
@@ -200,8 +215,6 @@
 		2A38E5F32B866835005AB7E2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				2AE239712B89DA99005F37A3 /* Category.swift */,
-				2A9172BA2B8B7D9400ACE790 /* Doctor.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -218,6 +231,9 @@
 			isa = PBXGroup;
 			children = (
 				2A38E5F82B866975005AB7E2 /* HomeViewController.storyboard */,
+				2A38E5F52B866918005AB7E2 /* HomeViewController.swift */,
+				2A19612C2B8E52D10009BDE2 /* AppointmentsViewController.storyboard */,
+				2A19612A2B8E52950009BDE2 /* AppointmentsViewController.swift */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -252,6 +268,8 @@
 			children = (
 				2A5CDBA62B8A8C1300032600 /* UIColor.swift */,
 				2A9172C02B8BB0A200ACE790 /* UIView.swift */,
+				2A20A0452B8F4A1A008E2046 /* UIViewController.swift */,
+				2A367BFA2B8F625C0087C4C5 /* UIApplication.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -379,9 +397,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1EBD282B8F34330058C4CA /* NavigationBarView.xib in Resources */,
 				2A38E5F92B866975005AB7E2 /* HomeViewController.storyboard in Resources */,
 				2A9172BF2B8B7ECF00ACE790 /* DoctorsItemCell.xib in Resources */,
 				2A61290F2B89D55C0074C694 /* CategoriesItemCell.xib in Resources */,
+				2A19612D2B8E52D10009BDE2 /* AppointmentsViewController.storyboard in Resources */,
 				2A38E5C92B8666D9005AB7E2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,14 +429,18 @@
 			files = (
 				2A9172C12B8BB0A200ACE790 /* UIView.swift in Sources */,
 				2AE239702B89DA46005F37A3 /* HomeVIewModel.swift in Sources */,
+				2A1EBD2A2B8F347C0058C4CA /* NavigationBarView.swift in Sources */,
+				2A19612B2B8E52950009BDE2 /* AppointmentsViewController.swift in Sources */,
 				2A5CDBA72B8A8C1300032600 /* UIColor.swift in Sources */,
 				2A9172BE2B8B7ECF00ACE790 /* DoctorsItemCell.swift in Sources */,
 				2A9172BB2B8B7D9400ACE790 /* Doctor.swift in Sources */,
+				2A20A0462B8F4A1A008E2046 /* UIViewController.swift in Sources */,
 				2A61290E2B89D55C0074C694 /* CategoriesItemCell.swift in Sources */,
 				2A38E5C02B8666D8005AB7E2 /* AppDelegate.swift in Sources */,
 				2A38E5C22B8666D8005AB7E2 /* SceneDelegate.swift in Sources */,
 				2A38E5F62B866918005AB7E2 /* HomeViewController.swift in Sources */,
 				2AE239722B89DA99005F37A3 /* Category.swift in Sources */,
+				2A367BFB2B8F625C0087C4C5 /* UIApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

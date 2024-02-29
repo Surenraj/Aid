@@ -96,6 +96,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: DoctorsItemCell.nibName) as? DoctorsItemCell {
             cell.load(doctor: self.viewModel?.doctorsList[indexPath.row])
+            cell.navigationController = self.navigationController
             return cell
         }
         return UITableViewCell()

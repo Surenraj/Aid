@@ -18,8 +18,8 @@ class DoctorsItemCell: UITableViewCell {
     @IBOutlet weak var designation: UILabel!
     @IBOutlet weak var appointmentBtn: UIButton!
     
+    var navigationController: UINavigationController?
     var doctor: Doctor?
-    
     static let nibName = "DoctorsItemCell"
     
     override func awakeFromNib() {
@@ -39,5 +39,11 @@ class DoctorsItemCell: UITableViewCell {
         self.designation.text = self.doctor?.designation
         self.imgView.image = UIImage(named: doctor?.doctorImg ?? "")
         self.ratingCount.text = doctor?.ratings
+    }
+    
+    @IBAction func appointmentBtnAction(_ sender: Any) {
+        if let appointmentVC = AppointmentsViewController.storyboardInstance() {
+            UIApplication.topNavigation()?.pushViewController(appointmentVC, animated: true)
+        }
     }
 }
